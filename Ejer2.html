@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Campos</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Calibri", sans-serif;
+            font-size: 1rem;
+        }
+
+        .portada {
+            float: left;
+            width: 40%;
+            padding: 10px;
+            
+        }
+
+        .portada img:hover{
+            width: 101%;
+        }
+
+        .logo {
+            width: 30%;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        img {
+            width: 100%;
+            border: 2px black solid;
+
+        }
+
+        .formulario {
+            float: left;
+            width: 60%;
+            padding: 15px;
+            margin: auto;
+        }
+
+        .contenedor {
+            width: 100%;
+            padding: 5px;
+            max-width: 55%;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #424110;
+        }
+
+        .pequenio {
+            width: 50px;
+        }
+
+        .mediano {
+            width: 200px;
+        }
+
+        .anchocompleto {
+            width: 100%;
+        }
+
+        td {
+            padding: 5px;
+            color: white;
+        }
+
+        input,
+        textarea,
+        select {
+            background: lavender;
+            border: 1px black solid;
+        }
+
+        input[type="submit"]:hover{
+            background: #0a3c09;
+        }
+
+        input[type="submit"] {
+            background: green;
+            padding: 10px 30px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            background: gray;
+        }
+
+        input:required {
+            border: 1px solid red;
+        }
+
+        #checkbox {
+            margin-left: 80px;
+            margin-right: 6px;
+        }
+
+    </style>
+</head>
+
+<body background="wallpapertip_dark-wallpaper-download_649163.png">
+    
+    <div class="logo animate__bounceInLeft animate__animated">
+        <img src="logo.png">
+    </div>
+    <div class="contenedor">
+        <div>
+            <div class="portada animate__zoomIn animate__animated">
+                <img src="portada.jpg">
+            </div>
+            <form method="POST" action="http://www.cursos-diseno.es/mi-mail.php">
+
+                <table class="formulario">
+                    <tr>
+                        <td>Nombre*</td>
+                        <td><input required type="text" name="nombre" class="anchocompleto" autofocus></td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos*</td>
+                        <td><input required type="text" name="apellidos" class="anchocompleto"
+                                placeholder="Los dos apellidos"></td>
+                    </tr>
+                    <tr>
+                        <td>Codigo Postal*</td>
+                        <td> <input required type="text" name="cp" class="pequenio" maxlength="5"> </td>
+                    </tr>
+                    <tr>
+                        <td>Direccion*</td>
+                        <td><input required type="text" class="anchocompleto" name="direccion"></td>
+                    </tr>
+                    <tr>
+                        <td>Población*</td>
+                        <td><input required type="text" name="ciudad" class="anchocompleto" value="Madrid"> </td>
+                    </tr>
+                    <tr>
+                        <td>Provincia*</td>
+                        <td><select required name="provincia" class="form-control">
+                                <option value="">- selecciona -</option>
+                                <option value="15">A coruña</option>
+                                <option value="1">Álava</option>
+                                <option value="2">Albacete</option>
+                                <option value="3">Alicante</option>
+                                <option value="4">Almería</option>
+                                <option value="33">Asturias</option>
+                                <option value="5">Ávila</option>
+                                <option value="6">Badajoz</option>
+                                <option value="7">Baleares</option>
+                                <option value="8">Barcelona</option>
+                                <option value="9">Burgos</option>
+                                <option value="10">Cáceres</option>
+                                <option value="11">Cádiz</option>
+                                <option value="39">Cantabria</option>
+                                <option value="12">Castellón</option>
+                                <option value="51">Ceuta</option>
+                                <option value="13">Ciudad Real</option>
+                                <option value="14">Córdoba</option>
+                                <option value="16">Cuenca</option>
+                                <option value="99">Extranjero</option>
+                                <option value="17">Girona</option>
+                                <option value="18">Granada</option>
+                                <option value="19">Guadalajara</option>
+                                <option value="20">Guipúzcoa</option>
+                                <option value="21">Huelva</option>
+                                <option value="22">Huesca</option>
+                                <option value="23">Jaén</option>
+                                <option value="26">La rioja</option>
+                                <option value="35">Las palmas</option>
+                                <option value="24">León</option>
+                                <option value="25">Lleida</option>
+                                <option value="27">Lugo</option>
+                                <option value="28">Madrid</option>
+                                <option value="29">Málaga</option>
+                                <option value="52">Melilla</option>
+                                <option value="30">Murcia</option>
+                                <option value="31">Navarra</option>
+                                <option value="32">Ourense</option>
+                                <option value="34">Palencia</option>
+                                <option value="36">Pontevedra</option>
+                                <option value="37">Salamanca</option>
+                                <option value="38">Santa cruz de tenerife</option>
+                                <option value="40">Segovia</option>
+                                <option value="41">Sevilla</option>
+                                <option value="42">Soria</option>
+                                <option value="43">Tarragona</option>
+                                <option value="44">Teruel</option>
+                                <option value="45">Toledo</option>
+                                <option value="46">Valencia</option>
+                                <option value="47">Valladolid</option>
+                                <option value="48">Vizcaya</option>
+                                <option value="49">Zamora</option>
+                                <option value="50">Zaragoza</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td>Email*</td>
+                        <td><input required type="email" name="email" class="mediano" placeholder="correo@dominio.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Edad*</td>
+                        <td><input required type="number" class="pequenio" name="edad" value="18" min="18" max="100">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sexo*</td>
+                        <td><label>
+                                <input required type="radio" name="sexo" value="hombre" checked> Hombre
+                            </label><br>
+                            <label><input required type="radio" name="sexo" value="mujer"> Mujer</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><label><input required type="checkbox" name="condiciones" value="Aceptada"> Acepto las condiciones
+                            de suscripción</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="hidden" name="destinatario" value="victor_ramos_tsapp1oa2021@cev.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>* Campos obligatorios</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Subscribirse"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
